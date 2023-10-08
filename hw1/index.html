@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Домашнее задание</h1>
+    <div id="button">
+      <p>
+        1. Создать кнопку "Перевернуть". При клике на кнопку текст кнопки должен
+        перевернуться и отобразиться в обратном порядке.
+      </p>
+      <button @click="upendButton">{{ message }}</button>
+    </div>
+    <div id="addListElement">
+      <p>
+        2. Есть список элементов. Пользователь может добавлять новые элементы
+        списка с текстом “Новый элемент списка” нажав на кнопку "Добавить".
+      </p>
+      <ol id="olElement">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit.</li>
+      </ol>
+      <button @click="addListElement">{{ textButton }}</button>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
