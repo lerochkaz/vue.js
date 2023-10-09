@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Вы разрабатываете приложение для отображения и сортировки списка товаров.
+      У вас есть массив объектов products, где каждый объект представляет товар
+      с его названием и ценой. Вам необходимо отобразить список товаров и
+      предоставить пользователю возможность сортировать товары по цене (по
+      возрастанию и по убыванию).
+    </p>
+    <div id="app">
+      <product></product>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="product.js"></script>
+    <script>
+      const App = {
+        components: {
+          product,
+        },
+      };
+      Vue.createApp(App).mount("#app");
+    </script>
+  </body>
+</html>
