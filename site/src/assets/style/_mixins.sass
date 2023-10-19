@@ -1,0 +1,67 @@
+@mixin heading-options($fs)
+    font-family: 'DM Serif Display'
+    font-style: normal
+    font-weight: 400
+    font-size: $fs
+    line-height: 125%
+    color: $color-dark
+
+@mixin paragraph-options($fs)
+    font-family: 'Jost'
+    font-style: normal
+    font-weight: 400
+    font-size: $fs
+    line-height: 150%
+    color: $color-medium
+
+@mixin text-options($fst, $fw, $fs)
+    font-family: 'Jost'
+    font-style: $fst
+    font-weight: $fw
+    font-size: $fs
+    line-height: 150%
+    color: $color-medium
+
+@mixin list-options($fs)
+    font-family: 'Jost'
+    font-style: normal
+    font-weight: 400
+    font-size: $fs
+    line-height: 270%
+    color: $color-medium
+
+@mixin container-center()
+    max-width: $width-site
+    margin: 0 auto
+    padding: 0 2%
+
+@mixin flex-center()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin center()
+    justify-content: center
+    align-items: center
+
+@mixin flex-column()
+    display: flex
+    flex-direction: column
+
+@mixin flex-between-center()
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin flex-around-center()
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+@mixin  flex-start()
+    display: flex
+    justify-content: flex-start
+
+@mixin shadow($time)
+    box-shadow: 0px 0px 14px 4px rgba(34, 60, 80, 0.2)
+    transition: all $time

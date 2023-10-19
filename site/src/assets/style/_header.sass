@@ -1,0 +1,22 @@
+.header
+    &_flex
+        @include flex-between-center
+    &__link
+        @include heading-options($heading-4)
+        @include flex-center
+        padding: 4rem 0
+        & img:first-child
+            padding-right: 0.3rem
+
+.nav
+    &__element
+        @include heading-options($heading-5)
+        display: inline-block
+        padding: 1.25rem
+        &:last-of-type
+            padding-right: 0
+        &:first-of-type
+            padding-left: 0
+        &:hover
+            color: $color-multicolor
+            transition: all 0.3s

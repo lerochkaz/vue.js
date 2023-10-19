@@ -1,0 +1,53 @@
+.banner
+    &_flex
+        @include flex-center()
+        position: relative
+    &__img
+        width: 100%
+    &__h1
+        @include heading-options($heading-1)
+    &__h2
+        @include heading-options($heading-2)
+    &__box
+        &_flex
+            max-width: 30%
+            position: absolute
+            left: 10%
+            bottom: 30%
+
+.button
+    &-dark
+        @include flex-center()
+        @include paragraph-options($smal-paragraph)
+        white-space: nowrap
+        color: $color-white
+        background-color: $color-medium
+        border-radius: $border-radius-button
+        padding: 1rem 3rem
+        max-width: 60%
+        &:hover
+            background-color: $color-multicolor
+            @include shadow(0.3s)
+
+    &__after
+        &::after
+            content: url("../image/afterWite.svg")
+            width: 2.5rem
+            padding-left: 0.5rem
+            padding-top: 0.5rem
+
+.padding-bottom
+    padding-bottom: 1.5rem
+
+.title
+    padding: 4rem 0
+    &_flex
+        @include flex-column()
+        @include center()
+        width: calc( $width-site * 0.58 )
+        text-align: center
+    &__h2
+        @include heading-options($heading-2)
+        padding-bottom: 1rem
+    &__h4
+        @include heading-options($heading-4)
