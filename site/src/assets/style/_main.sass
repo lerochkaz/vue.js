@@ -40,7 +40,7 @@
     padding-bottom: 1.5rem
 
 .title
-    padding: 4rem 0
+    padding: 6rem 0 5rem
     &_flex
         @include flex-column()
         @include center()
@@ -50,4 +50,75 @@
         @include heading-options($heading-2)
         padding-bottom: 1rem
     &__h4
-        @include heading-options($heading-4)
+        @include paragraph-options($large-paragraph)
+
+.section
+    &_flex
+        @include flex-between-center()
+        flex-wrap: wrap
+
+.card
+    &_flex
+        @include flex-between-center()
+    &__img
+    &__h3
+        @include heading-options($heading-3)
+        padding-top: 1rem
+    &__h4
+        @include paragraph-options($medium-paragraph)
+        padding-top: 0.3rem
+        padding-bottom: 3rem
+    &__link
+        border-radius: 50%
+        &:hover
+            @include shadow(0.3s)
+
+.advantage
+    background-color: #F4F0EC
+    padding: 5rem 0
+    margin-top: 4rem
+    &__flex
+        @include flex-around-center()
+    &__card
+        @include flex-column()
+        @include center()
+        padding-right: 76px
+        border-right: 1px solid $color-multicolor
+        &:last-of-type
+            border-right: none
+    &__big-h
+        @include heading-options(60px)
+        color: $color-multicolor
+    &__h3
+        @include paragraph-options($large-paragraph)
+        padding-top: 1rem
+
+.el
+    border-radius: 18%
+    border: 1px solid #E7E7E7
+    padding: 1.5rem 1.5rem 3rem
+    &:hover
+        background: $color-light
+    &El
+        padding-bottom: 5rem
+    &El_flex
+        @include flex-between-center()
+    &_flex
+        @include flex-column()
+        @include center()
+        max-width: 340px
+        &-row
+            @include flex-center()
+    &__img
+        border-radius: $border-el $border-el 0 0
+    &__h3
+        @include heading-options($heading-3)
+        padding-top: 1rem
+        padding-right: 1rem
+    &__p
+        @include paragraph-options($smal-paragraph)
+        padding-top: 1.5rem
+    &__link
+        border-radius: 50%
+        &:hover
+            @include shadow(0.3s)
