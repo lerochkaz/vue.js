@@ -1,0 +1,21 @@
+.footer
+    padding: 0 0 10rem
+    &_flex
+        @include flex-between-center()
+    &__el
+        @include flex-column()
+        align-self: flex-start
+        gap: 1.5rem
+        &-row
+            flex-direction: row
+        &-link
+            padding: 1.5rem
+            &:first-child
+                padding-left: 0
+            &:last-child
+                padding-right: 0
+        &__text
+            text-decoration: none
+            @include paragraph-options($large-paragraph)
+            &:first-child
+                @include heading-options($heading-3)

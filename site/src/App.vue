@@ -1,18 +1,22 @@
 <template>
   <div class="container__body">
-    <Header />
+    <HeaderComponent />
     <Main />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
 import Main from './components/Main.vue';
+import FooterComponent from './components/FooterComponent.vue';
+
 
 export default {
 	components: {
-		Header,
+		HeaderComponent,
     Main,
+    FooterComponent,
 	},
 };
 </script>
